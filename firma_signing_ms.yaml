@@ -1,0 +1,59 @@
+openapi: 3.1.0
+info:
+  title: firma_signing_ms
+  version: '1.0'
+  contact:
+    name: Fredy Rosero
+    email: faroseroc@unal.edu.co
+    url: 'mailto:faroseroc@unal.edu.co'
+  license:
+    name: MIT
+    identifier: MIT
+  description: Microservicio para firmar archivos
+servers:
+  - url: 'http://localhost:8095'
+paths:
+  /sign:
+    post:
+      summary: Firmar datos
+      operationId: post-sign
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  signature:
+                    type: string
+                  user_id:
+                    type: string
+                  data:
+                    type: string
+                required:
+                  - signature
+                  - user_id
+                  - data
+              examples:
+                Hola mundo! signed by 234:
+                  value:
+                    signature: IN5ackUMNi7nz/210U7MWRQLQcyP9QoJbOMI/kcFbALhJQcDnfRGVAt/8lxkMjt4Z8Px7deZUBLpmBpRdIirNMsd6GFq7+3zGMV/cbb7jySHJ73uezlRjBDcnhjUXdm95GKsWFm2d6AhQJqJMkmwUx+JWpvbfl8M6XlyZcS7nRc=
+                    user_id: '234'
+                    data: aG9sYSBtdW5kbyE=
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: string
+              required:
+                - data
+            examples:
+              hola mundo!:
+                value:
+                  data: hola mundo!
+components:
+  schemas: {}

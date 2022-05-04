@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: firma_signing_ms
+  title: Signing microservice
   version: '1.0'
   contact:
     name: Fredy Rosero
@@ -9,7 +9,8 @@ info:
   license:
     name: MIT
     identifier: MIT
-  description: Microservicio para firmar archivos
+  description: Recibe un dato o archivo en base64 y devuelve la firma del archivo por el usuario de la petición
+  summary: Microservicio para firmar archivos
 servers:
   - url: 'http://localhost:8095'
 paths:

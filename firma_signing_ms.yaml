@@ -50,6 +50,8 @@ paths:
               properties:
                 data:
                   type: string
+                user_id:
+                  type: integer
               required:
                 - data
             examples:

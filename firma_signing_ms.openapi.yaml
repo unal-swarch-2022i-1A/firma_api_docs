@@ -1,4 +1,6 @@
 openapi: 3.1.0
+x-stoplight:
+  id: 9b010def0a630
 info:
   title: Signing microservice
   version: '1.0'

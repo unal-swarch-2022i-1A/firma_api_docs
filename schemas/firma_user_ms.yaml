@@ -1,4 +1,6 @@
 openapi: 3.1.0
+x-stoplight:
+  id: 23954a05dbb1b
 info:
   title: User microservice
   version: '1.0'

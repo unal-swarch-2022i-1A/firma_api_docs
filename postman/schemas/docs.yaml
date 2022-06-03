@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: Docs microservice
   version: '1.0'
-  summary: Microservicio que adminsitra la metadata de los documentos
+  summary: Microservicio que adminsitra la metadata de los documentos.
 servers:
   - url: 'http://localhost:8091'
 paths:

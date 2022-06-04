@@ -14,9 +14,9 @@ info:
   description: Recibe un dato o archivo en base64 y devuelve la firma del archivo por el usuario de la petición
   summary: Microservicio para firmar archivos
 servers:
-  - url: 'http://localhost:8095'
+  - url: 'http://localhost:8092'
 paths:
-  /sign:
+  /signing:
     post:
       summary: Firmar datos
       operationId: post-sign
@@ -60,5 +60,6 @@ paths:
               hola mundo!:
                 value:
                   data: hola mundo!
+    parameters: []
 components:
   schemas: {}

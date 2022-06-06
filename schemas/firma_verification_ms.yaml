@@ -1,9 +1,8 @@
 openapi: 3.1.0
-x-stoplight:
-  id: 79o5ggwjn9oo5
 info:
   title: firma_verification_ms
   version: '1.0'
+  summary: 'Verifica la autenticidad e integridad de un archivo, su autor y firma'
 servers:
   - url: 'http://localhost:8093'
 paths:
@@ -64,3 +63,4 @@ paths:
       parameters: []
 components:
   schemas: {}
+  securitySchemes: {}

@@ -1,8 +1,9 @@
 openapi: 3.1.0
 info:
-  title: firma_verification_ms
+  title: Micro-servicio de Verificación
   version: '1.0'
   summary: 'Verifica la autenticidad e integridad de un archivo, su autor y firma'
+  description: ''
 servers:
   - url: 'http://localhost:8093'
 paths:

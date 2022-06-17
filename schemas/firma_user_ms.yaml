@@ -37,12 +37,7 @@ paths:
           description: Not Found
       operationId: get-users-userid
       description: ''
-      parameters:
-        - schema:
-            type: string
-          in: header
-          name: Authorization
-          description: Token de autorización
+      parameters: []
     patch:
       summary: Actualizar info de usuario
       operationId: patch-users-userid
@@ -71,22 +66,14 @@ paths:
               Actualizar nombre:
                 value:
                   name: Juan Peréz
-      parameters:
-        - schema:
-            type: string
-          in: header
-          name: Authorization
+      parameters: []
     delete:
       summary: Eliminar usuario
       operationId: delete-users-userid
       responses:
         '200':
           description: OK
-      parameters:
-        - schema:
-            type: string
-          in: header
-          name: Authorization
+      parameters: []
   /users/:
     post:
       summary: Crear un usario
